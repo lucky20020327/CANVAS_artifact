@@ -1,0 +1,902 @@
+[
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 869.8266,
+    "llm_calls": 12.8
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "n_runs": 5,
+    "cpr": 0.9818181818181818,
+    "tokens_k": 447.822,
+    "llm_calls": 9.2
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 785.3868,
+    "llm_calls": 10.4
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 210.2508,
+    "llm_calls": 8.8
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 389.279,
+    "llm_calls": 9.8
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 207.4858,
+    "llm_calls": 9.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 216.5456,
+    "llm_calls": 9
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 345.8414,
+    "llm_calls": 9.2
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 409.8786,
+    "llm_calls": 8.8
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "n_runs": 5,
+    "cpr": 0.8,
+    "tokens_k": 192.658,
+    "llm_calls": 7.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 318.5336,
+    "llm_calls": 6.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 143.6514,
+    "llm_calls": 6.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 340.7956,
+    "llm_calls": 9.4
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 589.754,
+    "llm_calls": 9.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 249.9418,
+    "llm_calls": 9
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "n_runs": 10,
+    "cpr": 0.0,
+    "tokens_k": 3388.345,
+    "llm_calls": 50
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "n_runs": 10,
+    "cpr": 0.7227272727272728,
+    "tokens_k": 1031.8299,
+    "llm_calls": 24
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "n_runs": 10,
+    "cpr": 0.65,
+    "tokens_k": 2531.5848,
+    "llm_calls": 40.1
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 243.6658,
+    "llm_calls": 11.3
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "n_runs": 9,
+    "cpr": 1.0,
+    "tokens_k": 577.3646666666667,
+    "llm_calls": 18
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 230.7824,
+    "llm_calls": 11.4
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 320.8658,
+    "llm_calls": 13.1
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 450.3694,
+    "llm_calls": 10.2
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 614.8861,
+    "llm_calls": 10.7
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 312.4754,
+    "llm_calls": 11.4
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 521.9286,
+    "llm_calls": 9.5
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 225.6289,
+    "llm_calls": 9.2
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "n_runs": 10,
+    "cpr": 0.76,
+    "tokens_k": 412.0987,
+    "llm_calls": 10.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "n_runs": 10,
+    "cpr": 0.8533333333333334,
+    "tokens_k": 852.356,
+    "llm_calls": 12.4
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 248.5081,
+    "llm_calls": 8.7
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "n_runs": 10,
+    "cpr": 0.0,
+    "tokens_k": 3763.9792,
+    "llm_calls": 50
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "n_runs": 10,
+    "cpr": 0.5727272727272728,
+    "tokens_k": 1304.1321,
+    "llm_calls": 24.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "n_runs": 10,
+    "cpr": 0.15,
+    "tokens_k": 3877.342,
+    "llm_calls": 48.6
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 333.4823,
+    "llm_calls": 11.4
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "n_runs": 10,
+    "cpr": 0.9142857142857143,
+    "tokens_k": 802.277,
+    "llm_calls": 18.2
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 361.1961,
+    "llm_calls": 11.7
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 440.749,
+    "llm_calls": 13.2
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 539.7784,
+    "llm_calls": 10.5
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 564.4109,
+    "llm_calls": 9.9
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "n_runs": 10,
+    "cpr": 0.85,
+    "tokens_k": 370.984,
+    "llm_calls": 10.5
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "n_runs": 10,
+    "cpr": 0.8,
+    "tokens_k": 1448.0723,
+    "llm_calls": 19.1
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 249.5332,
+    "llm_calls": 8.4
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "n_runs": 10,
+    "cpr": 0.68,
+    "tokens_k": 717.3202,
+    "llm_calls": 12.8
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "n_runs": 10,
+    "cpr": 0.9466666666666667,
+    "tokens_k": 708.3401,
+    "llm_calls": 10.2
+  },
+  {
+    "model": "claude-opus-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 375.2521,
+    "llm_calls": 10.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "n_runs": 5,
+    "cpr": 0.8,
+    "tokens_k": 1405.6898,
+    "llm_calls": 17.8
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "n_runs": 5,
+    "cpr": 0.8909090909090909,
+    "tokens_k": 613.8408,
+    "llm_calls": 11.8
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "n_runs": 5,
+    "cpr": 0.9,
+    "tokens_k": 1017.7732,
+    "llm_calls": 12.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 242.0948,
+    "llm_calls": 9.8
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 394.0068,
+    "llm_calls": 10.2
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "n_runs": 5,
+    "cpr": 0.85,
+    "tokens_k": 199.2838,
+    "llm_calls": 9.4
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 200.9312,
+    "llm_calls": 8.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 356.7098,
+    "llm_calls": 9.4
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 395.1998,
+    "llm_calls": 8.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 260.4548,
+    "llm_calls": 9.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 485.8958,
+    "llm_calls": 9
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 229.1572,
+    "llm_calls": 9.2
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "n_runs": 5,
+    "cpr": 0.84,
+    "tokens_k": 351.0156,
+    "llm_calls": 9.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 633.0054,
+    "llm_calls": 11.4
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Enhanced UML",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "n_runs": 5,
+    "cpr": 1.0,
+    "tokens_k": 235.5706,
+    "llm_calls": 8.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "n_runs": 4,
+    "cpr": 0.0,
+    "tokens_k": 3255.8195,
+    "llm_calls": 50
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "n_runs": 10,
+    "cpr": 0.5681818181818182,
+    "tokens_k": 1398.4557,
+    "llm_calls": 29.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "n_runs": 10,
+    "cpr": 0.36944444444444446,
+    "tokens_k": 2932.51,
+    "llm_calls": 40.7
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 286.3859,
+    "llm_calls": 13.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 561.5736,
+    "llm_calls": 16.8
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 233.866,
+    "llm_calls": 11.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "n_runs": 10,
+    "cpr": 0.9,
+    "tokens_k": 513.8964,
+    "llm_calls": 16.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 424.4493,
+    "llm_calls": 10.4
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 396.0197,
+    "llm_calls": 8.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 227.7341,
+    "llm_calls": 8.7
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "n_runs": 10,
+    "cpr": 0.9,
+    "tokens_k": 911.3017,
+    "llm_calls": 14.3
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 255.6571,
+    "llm_calls": 10.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "n_runs": 10,
+    "cpr": 0.76,
+    "tokens_k": 435.4138,
+    "llm_calls": 11
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "n_runs": 10,
+    "cpr": 0.9466666666666667,
+    "tokens_k": 469.4944,
+    "llm_calls": 9.4
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Raw NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 262.3445,
+    "llm_calls": 9.2
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "n_runs": 10,
+    "cpr": 0.04285714285714286,
+    "tokens_k": 3905.8926,
+    "llm_calls": 48.5
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "n_runs": 10,
+    "cpr": 0.39090909090909093,
+    "tokens_k": 2708.7751,
+    "llm_calls": 40
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "n_runs": 10,
+    "cpr": 0.075,
+    "tokens_k": 3840.8563,
+    "llm_calls": 45.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 318.6887,
+    "llm_calls": 11.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "n_runs": 10,
+    "cpr": 0.7142857142857143,
+    "tokens_k": 1411.4254,
+    "llm_calls": 25.9
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 453.1673,
+    "llm_calls": 14.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "n_runs": 10,
+    "cpr": 0.9,
+    "tokens_k": 904.4161,
+    "llm_calls": 20.2
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 523.0864,
+    "llm_calls": 11
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 557.5907,
+    "llm_calls": 9.9
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 366.4519,
+    "llm_calls": 10.1
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "n_runs": 10,
+    "cpr": 0.6,
+    "tokens_k": 1784.2034,
+    "llm_calls": 22.2
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 316.7456,
+    "llm_calls": 10
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "n_runs": 10,
+    "cpr": 0.68,
+    "tokens_k": 552.7667,
+    "llm_calls": 11.2
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "n_runs": 10,
+    "cpr": 0.92,
+    "tokens_k": 762.8368,
+    "llm_calls": 11.6
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "arm": "Spec-driven NL",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "n_runs": 10,
+    "cpr": 1.0,
+    "tokens_k": 313.8971,
+    "llm_calls": 8.7
+  }
+]

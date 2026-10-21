@@ -1,0 +1,9 @@
+model,layer,eval_id,task,strategy,symbol,n_runs,spr,cpr,tokens,agent_calls,compression_calls,llm_calls,edit_calls,compile_calls
+opus,application,开通支付分,APS,filter_context,P,5,0.6,0.9444444444444444,1906145.8,28.8,0,28.8,8,1.4
+opus,application,开通支付分,APS,summarize,S,5,0.2,0.95,2014545,34.6,3,37.6,13.2,2.6
+opus,application,HandleClearingReceipt,Clear,filter_context,P,5,1,1.0,1207138.2,19.8,0,19.8,3.8,1.4
+opus,application,HandleClearingReceipt,Clear,summarize,S,5,1,1.0,1182574.4,21,3.4,24.4,4.6,1.4
+sonnet,application,开通支付分,APS,filter_context,P,5,0,0.7777777777777778,1110000.4,18.4,0,18.4,2,1
+sonnet,application,开通支付分,APS,summarize,S,5,0,0.4722222222222222,2225008.4,40,4.2,44.2,6.2,1.8
+sonnet,application,HandleClearingReceipt,Clear,filter_context,P,5,1,1.0,1621265.2,21.8,0,21.8,3.4,1.2
+sonnet,application,HandleClearingReceipt,Clear,summarize,S,5,0.8,0.8,2206566,39.8,3.4,43.2,12.6,2.6

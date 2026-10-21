@@ -1,0 +1,38 @@
+{
+  "n_runs": 743,
+  "missing_runs": [
+    {
+      "arm": "Raw NL",
+      "model": "claude-opus-4-6",
+      "layer": "application",
+      "eval_id": "查询支付分首页数据",
+      "developer": "developer_2",
+      "n_runs": 4,
+      "nominal_runs": 5,
+      "missing_runs": 1
+    },
+    {
+      "arm": "Raw NL",
+      "model": "claude-sonnet-4-6",
+      "layer": "application",
+      "eval_id": "HandleClearingReceipt",
+      "developer": "developer_1",
+      "n_runs": 4,
+      "nominal_runs": 5,
+      "missing_runs": 1
+    },
+    {
+      "arm": "Raw NL",
+      "model": "claude-sonnet-4-6",
+      "layer": "application",
+      "eval_id": "HandleClearingReceipt",
+      "developer": "developer_2",
+      "n_runs": 0,
+      "nominal_runs": 5,
+      "missing_runs": 5
+    }
+  ],
+  "agent_call_budget": 50,
+  "missing_run_policy": "analyze available records; do not impute missing runs",
+  "wilcoxon": "paired handler means; one-sided exact sign permutations; zero differences dropped, tied absolute differences midranked"
+}

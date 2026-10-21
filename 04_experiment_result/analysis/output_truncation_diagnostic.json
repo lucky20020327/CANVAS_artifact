@@ -1,0 +1,27 @@
+{
+  "interrupted_runs": 6,
+  "interrupted_suite_passed": 1,
+  "interrupted_suite_not_passed": 5,
+  "diagnostic_excluded_run_ids": [
+    "run_19d7c64da99b0085",
+    "run_62319c8a16e3ffef",
+    "run_93fd3b05704446ae",
+    "run_b745b395fcef5612",
+    "run_d00372d3e20b017e"
+  ],
+  "main": {
+    "n_runs": 75,
+    "n_suite_passed": 64,
+    "spr": 0.8533333333333334,
+    "micro_cpr": 0.671875,
+    "macro_cpr": 0.8943819143819144
+  },
+  "diagnostic": {
+    "n_runs": 70,
+    "n_suite_passed": 64,
+    "spr": 0.9142857142857143,
+    "micro_cpr": 0.8729508196721312,
+    "macro_cpr": 0.9308465608465608
+  },
+  "scope": "Diagnostic comparison only; all six interrupted runs are included in the main results."
+}

@@ -1,0 +1,50 @@
+{
+  "overall": {
+    "filter_context": {
+      "spr": 0.65,
+      "cpr": 0.9305555555555556,
+      "tokens": 1461137.4,
+      "llm_calls": 22.2,
+      "agent_calls": 22.2
+    },
+    "summarize": {
+      "spr": 0.5,
+      "cpr": 0.8055555555555556,
+      "tokens": 1907173.45,
+      "llm_calls": 37.35,
+      "agent_calls": 33.85
+    }
+  },
+  "ratios": [
+    {
+      "model": "opus",
+      "task": "APS",
+      "token_ratio": 0.9461917207111283,
+      "llm_ratio": 0.7659574468085106,
+      "agent_ratio": 0.8323699421965318
+    },
+    {
+      "model": "opus",
+      "task": "Clear",
+      "token_ratio": 1.020771462666535,
+      "llm_ratio": 0.8114754098360657,
+      "agent_ratio": 0.9428571428571428
+    },
+    {
+      "model": "sonnet",
+      "task": "APS",
+      "token_ratio": 0.49887470087753377,
+      "llm_ratio": 0.41628959276018096,
+      "agent_ratio": 0.45999999999999996
+    },
+    {
+      "model": "sonnet",
+      "task": "Clear",
+      "token_ratio": 0.7347458449010815,
+      "llm_ratio": 0.5046296296296297,
+      "agent_ratio": 0.5477386934673367
+    }
+  ],
+  "token_ratio": 0.7661271710761284,
+  "llm_ratio": 0.5943775100401606
+}

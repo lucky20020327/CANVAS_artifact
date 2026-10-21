@@ -1,0 +1,12 @@
+{
+  "n_runs": 40,
+  "n_cells": 8,
+  "runs_per_cell": 5,
+  "agent_call_budget": 50,
+  "llm_cost_definition": "agent calls plus compression calls within the agent budget",
+  "source_sha256": {
+    "RQ4_context_management.xlsx": "aaca7b2e4d134bb8622dbf0cdb03a3c892a741ef768bda9b74b69aded2abe938",
+    "RQ4_evaluation_records.json": "8117c230c8860d28f980ab8938f32a9a6ff6b026bc538eab2db5a78937241f3d"
+  },
+  "aggregation": "Mean run CPR within cells; equal cell means across models and handlers. Cost ratios divide sums, not average ratios."
+}

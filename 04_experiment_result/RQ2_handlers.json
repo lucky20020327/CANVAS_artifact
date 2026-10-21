@@ -1,0 +1,107 @@
+[
+  {
+    "eval_id": "开通支付分",
+    "layer": "application",
+    "sum_cc": 78,
+    "label": "APS",
+    "expected_ut_total": 36
+  },
+  {
+    "eval_id": "HandleClearingReceipt",
+    "layer": "application",
+    "sum_cc": 29,
+    "label": "Clear",
+    "expected_ut_total": 14
+  },
+  {
+    "eval_id": "SyncRiskTradeEvc",
+    "layer": "application",
+    "sum_cc": 50,
+    "label": "Sync",
+    "expected_ut_total": 22
+  },
+  {
+    "eval_id": "查询支付分首页数据",
+    "layer": "application",
+    "sum_cc": 15,
+    "label": "Home",
+    "expected_ut_total": 7
+  },
+  {
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "layer": "domain",
+    "sum_cc": 25,
+    "label": "VCan",
+    "expected_ut_total": 15
+  },
+  {
+    "eval_id": "查询用户相关配置",
+    "layer": "domain",
+    "sum_cc": 28,
+    "label": "UCfg",
+    "expected_ut_total": 2
+  },
+  {
+    "eval_id": "更新已了解分数提示标记",
+    "layer": "application",
+    "sum_cc": 11,
+    "label": "Hint_app",
+    "expected_ut_total": 5
+  },
+  {
+    "eval_id": "记录用户后续需要提醒的信息",
+    "layer": "application",
+    "sum_cc": 10,
+    "label": "Remind_app",
+    "expected_ut_total": 4
+  },
+  {
+    "eval_id": "查询支付分账户信息",
+    "layer": "domain",
+    "sum_cc": 10,
+    "label": "Acct",
+    "expected_ut_total": 4
+  },
+  {
+    "eval_id": "记录用户需后续提醒的信息",
+    "layer": "domain",
+    "sum_cc": 9,
+    "label": "Remind_dom",
+    "expected_ut_total": 5
+  },
+  {
+    "eval_id": "登陆支付分小程序",
+    "layer": "application",
+    "sum_cc": 9,
+    "label": "Login",
+    "expected_ut_total": 4
+  },
+  {
+    "eval_id": "更新已了解分数提示标记",
+    "layer": "domain",
+    "sum_cc": 8,
+    "label": "Hint_dom",
+    "expected_ut_total": 2
+  },
+  {
+    "eval_id": "查询用户订单的统计数据",
+    "layer": "domain",
+    "sum_cc": 6,
+    "label": "Order",
+    "expected_ut_total": 2
+  },
+  {
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "layer": "domain",
+    "sum_cc": 7,
+    "label": "VIs",
+    "expected_ut_total": 4
+  },
+  {
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "layer": "domain",
+    "sum_cc": 5,
+    "label": "NRes",
+    "expected_ut_total": 2
+  }
+]

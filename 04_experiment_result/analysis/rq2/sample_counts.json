@@ -1,0 +1,1502 @@
+[
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Enhanced UML",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": null,
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_2",
+    "n_runs": 4,
+    "nominal_runs": 5,
+    "missing_runs": 1
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_1",
+    "n_runs": 4,
+    "nominal_runs": 5,
+    "missing_runs": 1
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_2",
+    "n_runs": 0,
+    "nominal_runs": 5,
+    "missing_runs": 5
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Raw NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-opus-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "开通支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "HandleClearingReceipt",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "SyncRiskTradeEvc",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "查询支付分首页数据",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否可以开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户相关配置",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "记录用户后续需要提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询支付分账户信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "记录用户需后续提醒的信息",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "application",
+    "eval_id": "登陆支付分小程序",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "更新已了解分数提示标记",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询用户订单的统计数据",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "验证用户是否已经开通微信支付分",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_1",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  },
+  {
+    "arm": "Spec-driven NL",
+    "model": "claude-sonnet-4-6",
+    "layer": "domain",
+    "eval_id": "查询非居民身份证实名身份可通过支付密码核身的资格",
+    "developer": "developer_2",
+    "n_runs": 5,
+    "nominal_runs": 5,
+    "missing_runs": 0
+  }
+]
