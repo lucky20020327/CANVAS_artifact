@@ -11,6 +11,8 @@
     "llm_calls": 9.093333333333334,
     "cpr_p": null,
     "tokens_p": null,
+    "cpr_p_holm": null,
+    "tokens_p_holm": null,
     "cpr_n_nonzero": null,
     "tokens_n_nonzero": null
   },
@@ -26,6 +28,8 @@
     "llm_calls": 16.706666666666667,
     "cpr_p": 0.046875,
     "tokens_p": 6.103515625e-05,
+    "cpr_p_holm": 0.0703125,
+    "tokens_p_holm": 0.0001220703125,
     "cpr_n_nonzero": 6,
     "tokens_n_nonzero": 15
   },
@@ -41,6 +45,8 @@
     "llm_calls": 17.946666666666665,
     "cpr_p": 0.0078125,
     "tokens_p": 3.0517578125e-05,
+    "cpr_p_holm": 0.03125,
+    "tokens_p_holm": 0.0001220703125,
     "cpr_n_nonzero": 8,
     "tokens_n_nonzero": 15
   },
@@ -56,6 +62,8 @@
     "llm_calls": 10.373333333333333,
     "cpr_p": null,
     "tokens_p": null,
+    "cpr_p_holm": null,
+    "tokens_p_holm": null,
     "cpr_n_nonzero": null,
     "tokens_n_nonzero": null
   },
@@ -71,6 +79,8 @@
     "llm_calls": 17.30666666666667,
     "cpr_p": 0.03515625,
     "tokens_p": 0.002685546875,
+    "cpr_p_holm": 0.0703125,
+    "tokens_p_holm": 0.002685546875,
     "cpr_n_nonzero": 8,
     "tokens_n_nonzero": 15
   },
@@ -86,6 +96,8 @@
     "llm_calls": 19.973333333333333,
     "cpr_p": 0.009765625,
     "tokens_p": 3.0517578125e-05,
+    "cpr_p_holm": 0.03125,
+    "tokens_p_holm": 0.0001220703125,
     "cpr_n_nonzero": 9,
     "tokens_n_nonzero": 15
   }

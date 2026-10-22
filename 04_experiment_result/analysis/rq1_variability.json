@@ -1,0 +1,82 @@
+[
+  {
+    "system": "uml2code",
+    "model": "claude-opus-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 13,
+    "mean_condition_cpr_sd": 0.02096780401077801,
+    "max_condition_cpr_sd": 0.27386127875258304
+  },
+  {
+    "system": "uml2code",
+    "model": "claude-sonnet-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 10,
+    "mean_condition_cpr_sd": 0.08882067281646705,
+    "max_condition_cpr_sd": 0.4472135954999579
+  },
+  {
+    "system": "kilocode",
+    "model": "claude-opus-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 13,
+    "mean_condition_cpr_sd": 0.02683281572999748,
+    "max_condition_cpr_sd": 0.22360679774997896
+  },
+  {
+    "system": "kilocode",
+    "model": "claude-sonnet-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 12,
+    "mean_condition_cpr_sd": 0.03377763506841994,
+    "max_condition_cpr_sd": 0.2439346884545225
+  },
+  {
+    "system": "opencode",
+    "model": "claude-opus-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 13,
+    "mean_condition_cpr_sd": 0.03064241302499712,
+    "max_condition_cpr_sd": 0.4472135954999579
+  },
+  {
+    "system": "opencode",
+    "model": "claude-sonnet-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 12,
+    "mean_condition_cpr_sd": 0.0281954984835046,
+    "max_condition_cpr_sd": 0.27386127875258304
+  },
+  {
+    "system": "openhands",
+    "model": "claude-opus-4-6",
+    "n_estimable": 14,
+    "n_zero_sd": 11,
+    "mean_condition_cpr_sd": 0.030108650659992936,
+    "max_condition_cpr_sd": 0.22360679774997896
+  },
+  {
+    "system": "openhands",
+    "model": "claude-sonnet-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 10,
+    "mean_condition_cpr_sd": 0.0760021110357221,
+    "max_condition_cpr_sd": 0.4472135954999579
+  },
+  {
+    "system": "claudecode",
+    "model": "claude-opus-4-6",
+    "n_estimable": 14,
+    "n_zero_sd": 11,
+    "mean_condition_cpr_sd": 0.04749666835856964,
+    "max_condition_cpr_sd": 0.38036288715636535
+  },
+  {
+    "system": "claudecode",
+    "model": "claude-sonnet-4-6",
+    "n_estimable": 15,
+    "n_zero_sd": 12,
+    "mean_condition_cpr_sd": 0.05713014917205013,
+    "max_condition_cpr_sd": 0.49792959773196915
+  }
+]

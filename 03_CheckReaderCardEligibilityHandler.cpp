@@ -31,26 +31,26 @@ class LibraryCardDomainCheckReaderCardEligibilityHandler {
         request_(request) {}
 
   librarycarddomain::CheckReaderCardEligibilityResp Process() {
-    // 入口参数检查
+    // 步骤1: 校验入口参数
     check_request_constraints();
 
-    // 步骤1: 查询读者账户
+    // 步骤2: 查询读者账户
     auto reader_account = query_reader_account();
 
-    // 步骤2: 统计未删除的办证记录数量
+    // 步骤3: 统计未删除的办证记录数量
     uint32_t open_count = count_active_card_openings();
 
-    // 步骤3: 如果读者证件类型不是常用证件
+    // 步骤4: 如果读者证件类型不是常用证件
     uint32_t review_allowed = 0;
     if (request_.document_type() != kDocumentTypeStandard) {
-      // 步骤4: 查询非常用证件的复核资格
+      // 步骤5: 查询非常用证件的复核资格
       review_allowed = query_alternate_document_review();
     }
 
-    // 步骤5: 判断是否可以新办借书证
+    // 步骤6: 判断是否可以新办借书证
     decide_card_eligibility(reader_account.get(), open_count, review_allowed);
 
-    // 步骤6: 返回办理结果
+    // 步骤7: 返回办理结果
     return build_response();
   }
 
@@ -149,7 +149,7 @@ class LibraryCardDomainCheckReaderCardEligibilityHandler {
       return review_repo.GetByPrimaryKey(route_key, request_.reader_id());
     });
 
-    // 步骤4补充说明: 查询不到记录，则按未通过复核继续下一步
+    // 步骤5补充说明: 查询不到记录，则按未通过复核继续下一步
     if (auto exception = outcome.TryTakeException(hostcomm::errorcode::DAO_GET_EMPTY_RECORD);
         exception) {
       return 0;
@@ -161,9 +161,9 @@ class LibraryCardDomainCheckReaderCardEligibilityHandler {
   // 函数说明：
   // 按资格规则表判断是否可以新办借书证，命中拒绝规则时返回对应错误码
   // 入参说明：
-  // reader_account - 步骤1查询到的读者账户，查不到时为空
-  // open_count - 步骤2统计到的未删除办证记录数量
-  // review_allowed - 步骤4的复核结果；未进入该分支时为 0
+  // reader_account - 步骤2查询到的读者账户，查不到时为空
+  // open_count - 步骤3统计到的未删除办证记录数量
+  // review_allowed - 步骤5的复核结果；未进入该分支时为 0
   // 返回值说明：
   // 无
   //

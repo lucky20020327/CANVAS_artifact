@@ -162,7 +162,7 @@ def draw_heatmap(
     bottom_labels = []
     for _, m in configs:
         bottom_labels.append("O" if m == "claude-opus-4-6" else "S")
-    ax.set_xticklabels(bottom_labels, fontsize=6)
+    ax.set_xticklabels(bottom_labels, fontsize=8)
     ax.xaxis.set_ticks_position("top")
     ax.xaxis.set_label_position("top")
     ax.tick_params(axis="x", length=0, pad=1)
@@ -171,13 +171,13 @@ def draw_heatmap(
         center = si * 2 + 0.5
         ax.text(
             center,
-            -0.08,
-            SYSTEM_LABEL[sys],
+            -0.03,
+            {"uml2code": "SGCA", "kilocode": "Kilo\nCode", "opencode": "Open\nCode", "openhands": "Open\nHands", "claudecode": "Claude\nCode"}[sys],
             ha="center",
-            va="bottom",
-            fontsize=5.5,
+            va="top",
+            fontsize=7.5,
             fontweight="bold",
-            rotation=15,
+            rotation=0,
             transform=ax.get_xaxis_transform(),
         )
 
@@ -187,7 +187,7 @@ def draw_heatmap(
         title,
         ha="center",
         va="bottom",
-        fontsize=7.5,
+        fontsize=9,
         fontweight="bold",
         transform=ax.transAxes,
     )
@@ -202,8 +202,8 @@ def draw_heatmap(
             for layer, eid in handler_list
         ]
         ax.set_yticks(range(n_h))
-        ax.set_yticklabels(y_labels, fontsize=5.5)
-        ax.set_ylabel(r"Handler ($\Sigma$CC)", fontsize=6)
+        ax.set_yticklabels(y_labels, fontsize=7.5)
+        ax.set_ylabel(r"Handler ($\Sigma$CC)", fontsize=8)
     else:
         ax.set_yticks([])
 
@@ -225,7 +225,7 @@ def draw_heatmap(
                 label,
                 ha="center",
                 va="center",
-                fontsize=5,
+                fontsize=7,
                 color="#111827",
                 fontweight=fw,
             )
@@ -271,11 +271,11 @@ def fig_dual_heatmap(rows):
     )
 
     cb = fig.colorbar(im_cpr, cax=ax_cb)
-    cb.set_label("Pass Rate (%)", fontsize=6.5)
+    cb.set_label("Pass Rate (%)", fontsize=8)
     cb.set_ticks([0, 50, 80, 90, 95, 100])
-    cb.ax.tick_params(labelsize=5.5)
+    cb.ax.tick_params(labelsize=7.5)
 
-    fig.subplots_adjust(top=0.82, bottom=0.03, left=0.17, right=0.93)
+    fig.subplots_adjust(top=0.82, bottom=0.03, left=0.22, right=0.94)
     out = FIG_DIR / "rq1_cpr_heatmap.pdf"
     fig.savefig(out, bbox_inches="tight", dpi=300)
     print(f"Wrote {out}")

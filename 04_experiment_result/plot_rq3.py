@@ -16,7 +16,7 @@ def setup_style():
     plt.rcParams.update({
         "font.family": "serif",
         "font.serif": ["Times New Roman", "DejaVu Serif"],
-        "font.size": 8,
+        "font.size": 11,
     })
 
 
@@ -30,7 +30,7 @@ def fig_overall_efficiency(rows):
 
     x = np.arange(len(SYSTEM_ORDER))
     width = 0.32
-    labels = [SYSTEM_LABEL[s] for s in SYSTEM_ORDER]
+    labels = ["SGCA", "Kilo", "OpenCode", "OpenHands", "Claude"]
 
     # Tokens
     opus_tok = [data[(s, "claude-opus-4-6")][0] for s in SYSTEM_ORDER]
@@ -39,16 +39,17 @@ def fig_overall_efficiency(rows):
                     color="#3b82f6", edgecolor="white", linewidth=0.5)
     bars2 = ax1.bar(x + width/2, sonnet_tok, width, label="Sonnet",
                     color="#93c5fd", edgecolor="white", linewidth=0.5)
-    for bars in [bars1, bars2]:
+    for series, bars in enumerate([bars1, bars2]):
         for bar in bars:
-            ax1.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 15,
+            ax1.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 20 + series * max(opus_tok + sonnet_tok) * 0.06,
                      f"{bar.get_height():.0f}", ha="center", va="bottom",
-                     fontsize=6)
+                     fontsize=10)
     ax1.set_xticks(x)
-    ax1.set_xticklabels(labels, fontsize=8, rotation=15, ha="right")
-    ax1.set_ylabel("Handler-macro Tokens (K)", fontsize=8)
-    ax1.set_title("Token Consumption", fontsize=9, fontweight="bold")
-    ax1.legend(fontsize=7, frameon=False)
+    ax1.set_xticklabels(labels, fontsize=11, rotation=40, ha="right")
+    ax1.set_ylabel("Tokens (K)", fontsize=11)
+    ax1.set_title("Token Consumption", fontsize=12, fontweight="bold")
+    ax1.legend(fontsize=10, frameon=False, loc="upper left")
+    ax1.set_ylim(0, max(opus_tok + sonnet_tok) * 1.25)
     ax1.spines["top"].set_visible(False)
     ax1.spines["right"].set_visible(False)
 
@@ -59,20 +60,21 @@ def fig_overall_efficiency(rows):
                     color="#f97316", edgecolor="white", linewidth=0.5)
     bars4 = ax2.bar(x + width/2, sonnet_calls, width, label="Sonnet",
                     color="#fdba74", edgecolor="white", linewidth=0.5)
-    for bars in [bars3, bars4]:
+    for series, bars in enumerate([bars3, bars4]):
         for bar in bars:
-            ax2.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.3,
+            ax2.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.3 + series * 1.7,
                      f"{bar.get_height():.1f}", ha="center", va="bottom",
-                     fontsize=6)
+                     fontsize=10)
     ax2.set_xticks(x)
-    ax2.set_xticklabels(labels, fontsize=8, rotation=15, ha="right")
-    ax2.set_ylabel("Handler-macro LLM Calls", fontsize=8)
-    ax2.set_title("LLM Call Count", fontsize=9, fontweight="bold")
-    ax2.legend(fontsize=7, frameon=False)
+    ax2.set_xticklabels(labels, fontsize=11, rotation=40, ha="right")
+    ax2.set_ylabel("LLM Calls", fontsize=11)
+    ax2.set_title("LLM Call Count", fontsize=12, fontweight="bold")
+    ax2.legend(fontsize=10, frameon=False, loc="upper left")
+    ax2.set_ylim(0, max(opus_calls + sonnet_calls) * 1.30)
     ax2.spines["top"].set_visible(False)
     ax2.spines["right"].set_visible(False)
 
-    fig.subplots_adjust(wspace=0.3)
+    fig.subplots_adjust(wspace=0.42, bottom=0.30, top=0.86)
     out = FIG_DIR / "rq3_efficiency_overall.pdf"
     fig.savefig(out, bbox_inches="tight", dpi=300)
     print(f"Wrote {out}")

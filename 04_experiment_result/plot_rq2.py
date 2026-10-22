@@ -26,7 +26,7 @@ def setup_style():
     plt.rcParams.update({
         "font.family": "serif",
         "font.serif": ["Times New Roman", "DejaVu Serif"],
-        "font.size": 8,
+        "font.size": 11,
     })
 
 def fig_per_handler_cpr(all_rows):
@@ -63,32 +63,33 @@ def fig_per_handler_cpr(all_rows):
                         label=ARM_LABEL[arm],
                         markeredgecolor="white", markeredgewidth=0.4)
 
-        ax_cpr.set_ylabel("Case Pass Rate (%)", fontsize=8)
+        ax_cpr.set_ylabel("CPR (%)", fontsize=11)
         ax_cpr.set_ylim(-5, 108)
+        ax_cpr.set_yticks([0, 50, 100])
         ax_cpr.set_title(
-            f"({chr(97 + 2 * row_index)}) {MODEL_SHORT[model]}: Functional Correctness",
-            fontsize=8.5, fontweight="bold",
+            f"({chr(97 + 2 * row_index)}) {MODEL_SHORT[model]}: CPR",
+            fontsize=12, fontweight="bold",
         )
-        ax_tok.set_ylabel("Avg Tokens (K)", fontsize=8)
+        ax_tok.set_ylabel("Tokens (K)", fontsize=11)
         ax_tok.set_title(
-            f"({chr(98 + 2 * row_index)}) {MODEL_SHORT[model]}: Token Consumption",
-            fontsize=8.5, fontweight="bold",
+            f"({chr(98 + 2 * row_index)}) {MODEL_SHORT[model]}: Tokens",
+            fontsize=12, fontweight="bold",
         )
 
     axes[0, 1].set_ylim(bottom=0)
     for ax in axes.flat:
         ax.set_xticks(x_positions)
-        ax.set_xticklabels(x_labels, fontsize=6, rotation=60, ha="right")
+        ax.set_xticklabels(x_labels, fontsize=10.5, rotation=70, ha="right")
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
         ax.grid(axis="y", alpha=0.3, linewidth=0.5)
     for ax in axes[-1]:
-        ax.set_xlabel(r"Handler ($\Sigma$CC)", fontsize=7.5)
+        ax.set_xlabel(r"Handler ($\Sigma$CC)", fontsize=11)
 
     handles, labels = axes[0, 0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="upper center", ncol=3,
-               fontsize=8, frameon=False)
-    fig.subplots_adjust(top=0.88, bottom=0.19, wspace=0.32, hspace=0.35)
+               fontsize=11, frameon=False)
+    fig.subplots_adjust(top=0.86, bottom=0.28, wspace=0.40, hspace=0.55)
     out = FIG_DIR / "rq2_per_handler_cpr.pdf"
     fig.savefig(out, bbox_inches="tight", dpi=300)
     print(f"Wrote {out}")

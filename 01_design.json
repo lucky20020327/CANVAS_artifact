@@ -10,58 +10,7 @@
       "text": "判断读者是否可以新办借书证",
       "is_return": false,
       "level": 0,
-      "rule_tables": [
-        {
-          "id": "312cc96d-9dc7-4a80-8711-c90be854be68",
-          "name": "入口参数检查",
-          "conditions": {
-            "c773f38b-6bfb-42a6-993b-25c30b587b61": {
-              "id": "c773f38b-6bfb-42a6-993b-25c30b587b61",
-              "value": "必填参数均已传入，并且满足概念上的取值约束",
-              "desc": "必填参数均已传入，并且满足概念上的取值约束",
-              "source": null,
-              "ref_rule_tables": []
-            }
-          },
-          "actions": {
-            "cc3e5a71-1c40-4f8d-96fa-ee009791ef95": {
-              "id": "cc3e5a71-1c40-4f8d-96fa-ee009791ef95",
-              "value": "返回码= 参数不符合契约约束(INVALID_PARAM)",
-              "desc": "返回码= 参数不符合契约约束(INVALID_PARAM)",
-              "type": 1,
-              "typeDesc": "",
-              "source": null
-            },
-            "abf40d92-9ae3-4012-9d9f-5d5afd98dadd": {
-              "id": "abf40d92-9ae3-4012-9d9f-5d5afd98dadd",
-              "value": "",
-              "desc": "",
-              "type": 2,
-              "typeDesc": "",
-              "source": null
-            }
-          },
-          "rules": [
-            {
-              "id": "ce0d2b91-ba9c-4121-9d13-55934eff3631",
-              "conditions": [
-                {
-                  "conditionId": "c773f38b-6bfb-42a6-993b-25c30b587b61",
-                  "conditionValue": "否"
-                }
-              ],
-              "actions": [
-                {
-                  "actionId": "cc3e5a71-1c40-4f8d-96fa-ee009791ef95"
-                },
-                {
-                  "actionId": "abf40d92-9ae3-4012-9d9f-5d5afd98dadd"
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      "rule_tables": [],
       "state_transition_event": null,
       "comment": "",
       "handler_spec": {
@@ -334,282 +283,79 @@
           }
         ]
       },
-      "stub_spec": {
-        "component_type_name": "标准服务调用",
-        "component_instance_name": "LibraryCardDomain_CheckReaderCardEligibility",
-        "component_config": {},
-        "stub_metadata": {
-          "request_name": "librarycarddomain.CheckReaderCardEligibilityReq",
-          "response_name": "librarycarddomain.CheckReaderCardEligibilityResp",
-          "stub_type": "standard_client",
-          "stub_config": "",
-          "proto_type_defines": [
-            {
-              "childrens": [],
-              "full_name": "librarycarddomain.CheckReaderCardEligibilityReq",
-              "protobuf_source": "message CheckReaderCardEligibilityReq {\n  uint64 reader_id = 1;\n  string home_branch = 2;\n  string document_type = 3;\n  uint32 profile_complete = 4;\n  uint32 max_open_cards = 5;\n}\n",
-              "type": "message",
-              "contract_attributes": [
-                {
-                  "field_name": "reader_id",
-                  "concept": {
-                    "concept_name": "ReaderId",
-                    "enum_value": [],
-                    "data_type": "uint64",
-                    "default_value": "",
-                    "min_value": "1",
-                    "max_value": "",
-                    "min_length": "",
-                    "max_length": ""
-                  },
-                  "name_cn": "读者编号",
-                  "desc": "【必填】读者编号",
-                  "extra_desc": "",
-                  "cal_method": "",
-                  "multiplicity_list": []
-                },
-                {
-                  "field_name": "home_branch",
-                  "concept": {
-                    "concept_name": "BranchCode",
-                    "enum_value": [],
-                    "data_type": "string",
-                    "default_value": "",
-                    "min_value": "",
-                    "max_value": "",
-                    "min_length": "4",
-                    "max_length": "16"
-                  },
-                  "name_cn": "所属分馆",
-                  "desc": "【必填】分馆编码",
-                  "extra_desc": "",
-                  "cal_method": "",
-                  "multiplicity_list": []
-                },
-                {
-                  "field_name": "document_type",
-                  "concept": {
-                    "concept_name": "DocumentType",
-                    "enum_value": [
-                      {
-                        "name": "常用证件",
-                        "value": "1",
-                        "code": "DOC_STANDARD",
-                        "desc": ""
-                      },
-                      {
-                        "name": "护照",
-                        "value": "2",
-                        "code": "DOC_PASSPORT",
-                        "desc": ""
-                      },
-                      {
-                        "name": "其他证件",
-                        "value": "3",
-                        "code": "DOC_OTHER",
-                        "desc": ""
-                      }
-                    ],
-                    "data_type": "string",
-                    "default_value": "",
-                    "min_value": "",
-                    "max_value": "",
-                    "min_length": "",
-                    "max_length": ""
-                  },
-                  "name_cn": "证件类型",
-                  "desc": "【必填】读者登记的证件类型",
-                  "extra_desc": "",
-                  "cal_method": "",
-                  "multiplicity_list": []
-                },
-                {
-                  "field_name": "profile_complete",
-                  "concept": {
-                    "concept_name": "ProfileCompleteness",
-                    "enum_value": [
-                      {
-                        "name": "未齐",
-                        "value": "0",
-                        "code": "PROFILE_MISSING",
-                        "desc": ""
-                      },
-                      {
-                        "name": "已齐",
-                        "value": "1",
-                        "code": "PROFILE_READY",
-                        "desc": ""
-                      }
-                    ],
-                    "data_type": "uint32",
-                    "default_value": "",
-                    "min_value": "",
-                    "max_value": "",
-                    "min_length": "",
-                    "max_length": ""
-                  },
-                  "name_cn": "资料是否完整",
-                  "desc": "【必填】0 表示资料未齐，1 表示资料已齐",
-                  "extra_desc": "",
-                  "cal_method": "",
-                  "multiplicity_list": []
-                },
-                {
-                  "field_name": "max_open_cards",
-                  "concept": {
-                    "concept_name": "OpenCardLimit",
-                    "enum_value": [],
-                    "data_type": "uint32",
-                    "default_value": "",
-                    "min_value": "1",
-                    "max_value": "5",
-                    "min_length": "",
-                    "max_length": ""
-                  },
-                  "name_cn": "办证上限",
-                  "desc": "【必填】同一读者允许同时持有的借书证数量上限",
-                  "extra_desc": "",
-                  "cal_method": "",
-                  "multiplicity_list": []
-                }
-              ]
-            },
-            {
-              "childrens": [],
-              "full_name": "librarycarddomain.CheckReaderCardEligibilityResp",
-              "protobuf_source": "message CheckReaderCardEligibilityResp {\n  uint32 eligible = 1;\n  string denial_reason = 2;\n}\n",
-              "type": "message",
-              "contract_attributes": [
-                {
-                  "field_name": "eligible",
-                  "concept": {
-                    "concept_name": "EligibilityFlag",
-                    "enum_value": [
-                      {
-                        "name": "不可办理",
-                        "value": "0",
-                        "code": "NOT_ELIGIBLE",
-                        "desc": ""
-                      },
-                      {
-                        "name": "可以办理",
-                        "value": "1",
-                        "code": "ELIGIBLE",
-                        "desc": ""
-                      }
-                    ],
-                    "data_type": "uint32",
-                    "default_value": "",
-                    "min_value": "",
-                    "max_value": "",
-                    "min_length": "",
-                    "max_length": ""
-                  },
-                  "name_cn": "是否可办证",
-                  "desc": "1 表示可以新办，0 表示不可以",
-                  "extra_desc": "",
-                  "cal_method": "",
-                  "multiplicity_list": []
-                },
-                {
-                  "field_name": "denial_reason",
-                  "concept": {
-                    "concept_name": "DenialReason",
-                    "enum_value": [],
-                    "data_type": "string",
-                    "default_value": "",
-                    "min_value": "",
-                    "max_value": "",
-                    "min_length": "",
-                    "max_length": "128"
-                  },
-                  "name_cn": "拒绝说明",
-                  "desc": "不可办理时的说明；可以办理时为空",
-                  "extra_desc": "",
-                  "cal_method": "",
-                  "multiplicity_list": []
-                }
-              ]
-            }
-          ]
-        },
-        "xcontract_model": {
-          "contract_interface": {
-            "name_cn": "判断读者是否可以新办借书证",
-            "name_en": "CheckReaderCardEligibility",
-            "desc": "判断读者是否可以新办借书证",
-            "package_name": "librarycarddomain",
-            "service_name": "LibraryCardDomain",
-            "request": {
-              "aggregation_id": "10746cc7a8-6457-43d2-b76b-eae18ed417f5",
-              "data_model_version": 87,
-              "entity_instance_id": "10e4cba4f2-1a54-40e1-866f-bdecca5e9539"
-            },
-            "response": {
-              "aggregation_id": "10d8c4af60-0f3f-4397-8694-6f7f6856d7e2",
-              "data_model_version": 87,
-              "entity_instance_id": "10fa9789c0-1d77-49bb-a4f3-f58ba2542d28"
-            },
-            "request_entity": {
-              "entity_instance_id": "10e4cba4f2-1a54-40e1-866f-bdecca5e9539",
-              "name_cn": "CheckReaderCardEligibilityReq",
-              "name_en": "CheckReaderCardEligibilityReq",
-              "desc": "CheckReaderCardEligibilityReq",
-              "package_name": "librarycarddomain",
-              "message_name": "CheckReaderCardEligibilityReq",
-              "attribute_instances": []
-            },
-            "response_entity": {
-              "entity_instance_id": "10fa9789c0-1d77-49bb-a4f3-f58ba2542d28",
-              "name_cn": "CheckReaderCardEligibilityResp",
-              "name_en": "CheckReaderCardEligibilityResp",
-              "desc": "CheckReaderCardEligibilityResp",
-              "package_name": "librarycarddomain",
-              "message_name": "CheckReaderCardEligibilityResp",
-              "attribute_instances": []
-            }
-          },
-          "entity_instances": {},
-          "enum_instances": {}
-        },
-        "error_code_list": [
-          {
-            "error_code_name": "INVALID_PARAM",
-            "error_code_value": "1001",
-            "desc": "参数不符合契约约束",
-            "module_name": "librarycarddomain"
-          },
-          {
-            "error_code_name": "ACCOUNT_CLOSED",
-            "error_code_value": "1002",
-            "desc": "读者账户已关闭",
-            "module_name": "librarycarddomain"
-          },
-          {
-            "error_code_name": "PROFILE_INCOMPLETE",
-            "error_code_value": "1003",
-            "desc": "读者资料未填写完整",
-            "module_name": "librarycarddomain"
-          },
-          {
-            "error_code_name": "OPEN_CARD_LIMIT_REACHED",
-            "error_code_value": "1004",
-            "desc": "办证数量达到馆方上限",
-            "module_name": "librarycarddomain"
-          },
-          {
-            "error_code_name": "DOCUMENT_REVIEW_REQUIRED",
-            "error_code_value": "1005",
-            "desc": "非常用证件需要先完成复核",
-            "module_name": "librarycarddomain"
-          }
-        ]
-      },
+      "stub_spec": null,
       "entity_method_spec": null,
       "entity_repo_method_spec": null
     },
     {
       "id": 1,
+      "res_id": "1dfa16aa-8848-5978-87d8-11ccb79b5b07",
+      "type": "function",
+      "to_lifeline_layer": "domainControl",
+      "text": "校验入口参数",
+      "is_return": false,
+      "level": 0,
+      "rule_tables": [
+        {
+          "id": "312cc96d-9dc7-4a80-8711-c90be854be68",
+          "name": "入口参数检查",
+          "conditions": {
+            "c773f38b-6bfb-42a6-993b-25c30b587b61": {
+              "id": "c773f38b-6bfb-42a6-993b-25c30b587b61",
+              "value": "必填参数均已传入，并且满足概念上的取值约束",
+              "desc": "必填参数均已传入，并且满足概念上的取值约束",
+              "source": null,
+              "ref_rule_tables": []
+            }
+          },
+          "actions": {
+            "cc3e5a71-1c40-4f8d-96fa-ee009791ef95": {
+              "id": "cc3e5a71-1c40-4f8d-96fa-ee009791ef95",
+              "value": "返回码= 参数不符合契约约束(INVALID_PARAM)",
+              "desc": "返回码= 参数不符合契约约束(INVALID_PARAM)",
+              "type": 1,
+              "typeDesc": "",
+              "source": null
+            },
+            "abf40d92-9ae3-4012-9d9f-5d5afd98dadd": {
+              "id": "abf40d92-9ae3-4012-9d9f-5d5afd98dadd",
+              "value": "",
+              "desc": "",
+              "type": 2,
+              "typeDesc": "",
+              "source": null
+            }
+          },
+          "rules": [
+            {
+              "id": "ce0d2b91-ba9c-4121-9d13-55934eff3631",
+              "conditions": [
+                {
+                  "conditionId": "c773f38b-6bfb-42a6-993b-25c30b587b61",
+                  "conditionValue": "否"
+                }
+              ],
+              "actions": [
+                {
+                  "actionId": "cc3e5a71-1c40-4f8d-96fa-ee009791ef95"
+                },
+                {
+                  "actionId": "abf40d92-9ae3-4012-9d9f-5d5afd98dadd"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "state_transition_event": null,
+      "comment": "按开发需求中的入口字段契约检查必填值和取值范围；不满足时返回 INVALID_PARAM。",
+      "handler_spec": null,
+      "stub_spec": null,
+      "entity_method_spec": null,
+      "entity_repo_method_spec": null
+    },
+    {
+      "id": 2,
       "res_id": "92c3db54-ae7f-437a-816f-ffc18c4b2f49",
       "type": "function",
       "to_lifeline_layer": "entity",
@@ -721,7 +467,7 @@
         },
         "route_field_name": "reader_id",
         "route_field_name_cn": "读者编号",
-        "entity_repo_class_code": "class ReaderAccountRepo {\n public:\n  // Query one reader account by reader_id.\n  // Returns an empty result when no record exists.\n  ReaderAccount QueryByReaderId(uint64_t reader_id);\n};\n",
+        "entity_repo_class_code": "class ReaderAccountPoRouteKey {\n public:\n  void set_reader_id(uint64_t reader_id);\n};\n\nclass ReaderAccountRepo {\n public:\n  // Query by reader_id within the supplied route.\n  // Throw hostcomm::errorcode::DAO_GET_EMPTY_RECORD when no record exists.\n  ReaderAccount GetByPrimaryKey(const ReaderAccountPoRouteKey& route, uint64_t reader_id);\n};\n",
         "entity_class_code": "class ReaderAccount {\n public:\n  uint64_t reader_id() const;\n  uint32_t account_status() const;\n};\n",
         "class_obj": {
           "id": "8f807870-98f0-4f20-bde3-3c6f62cf446c",
@@ -735,7 +481,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "res_id": "9a306ac2-b196-41e5-8a6f-20c2863fd704",
       "type": "function",
       "to_lifeline_layer": "entity",
@@ -772,7 +518,7 @@
         },
         "route_field_name": "reader_id",
         "route_field_name_cn": "读者编号",
-        "entity_repo_class_code": "class CardOpeningRecordRepo {\n public:\n  // Count records whose removed_flag is 0.\n  uint32_t CountActive(uint64_t reader_id);\n};\n",
+        "entity_repo_class_code": "class CardOpeningRecordPoRouteKey {\n public:\n  void set_reader_id(uint64_t reader_id);\n};\n\nclass CardOpeningRecordRepo {\n public:\n  // Count records for the route whose removed_flag equals the argument.\n  uint32_t Count(const CardOpeningRecordPoRouteKey& route, uint32_t removed_flag);\n};\n",
         "entity_class_code": "class CardOpeningRecord {\n public:\n  uint64_t reader_id() const;\n  uint32_t removed_flag() const;\n};\n",
         "class_obj": {
           "id": "e53dc61a-f71d-4f63-b5d0-95e6d4c196da",
@@ -786,7 +532,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "res_id": "d3b6637e-5753-449d-84be-fa31209561a8",
       "type": "if",
       "to_lifeline_layer": null,
@@ -802,7 +548,7 @@
       "entity_repo_method_spec": null
     },
     {
-      "id": 4,
+      "id": 5,
       "res_id": "0396745c-432b-4d4e-9271-58da578f2835",
       "type": "function",
       "to_lifeline_layer": "entity",
@@ -834,7 +580,7 @@
         },
         "route_field_name": "reader_id",
         "route_field_name_cn": "读者编号",
-        "entity_repo_class_code": "class AlternateDocumentReviewRepo {\n public:\n  // Query whether a non-standard document has passed review.\n  // Missing records are treated as review_allowed = 0 by the caller.\n  AlternateDocumentReview QueryByReaderId(uint64_t reader_id);\n};\n",
+        "entity_repo_class_code": "class AlternateDocumentReviewPoRouteKey {\n public:\n  void set_reader_id(uint64_t reader_id);\n};\n\nclass AlternateDocumentReviewRepo {\n public:\n  // Query by reader_id within the supplied route.\n  // Throw hostcomm::errorcode::DAO_GET_EMPTY_RECORD when no record exists.\n  AlternateDocumentReview GetByPrimaryKey(const AlternateDocumentReviewPoRouteKey& route, uint64_t reader_id);\n};\n",
         "entity_class_code": "class AlternateDocumentReview {\n public:\n  uint64_t reader_id() const;\n  uint32_t review_allowed() const;\n};\n",
         "class_obj": {
           "id": "e3982bf6-1788-4da0-8caa-4b260fcf9bbc",
@@ -848,7 +594,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "res_id": "26e99069-125d-4131-aa71-a5d635f7cdd5",
       "type": "function",
       "to_lifeline_layer": "domainControl",
@@ -991,7 +737,7 @@
       "entity_repo_method_spec": null
     },
     {
-      "id": 6,
+      "id": 7,
       "res_id": "1a608cea-c130-44c4-970d-5525f6139f17",
       "type": "function",
       "to_lifeline_layer": "",
@@ -1008,6 +754,61 @@
     }
   ],
   "data_dependencies": [
+    {
+      "node_id": "1dfa16aa-8848-5978-87d8-11ccb79b5b07",
+      "node_name": "校验入口参数",
+      "node_type": "function",
+      "api_data_dependency": [],
+      "rule_data_dependency": {
+        "rule_data_condition_dependency": [
+          {
+            "condition_desc": "必填参数均已传入，并且满足概念上的取值约束",
+            "suppliers": [
+              {
+                "supply_node_id": "d3315207-ce49-4941-bcee-834b223b01cd",
+                "supply_node_name": "",
+                "supply_data_type": "uint64",
+                "supply_data_path": "CheckReaderCardEligibility.request(CheckReaderCardEligibilityReq).reader_id",
+                "supply_way": "direct",
+                "process_way": ""
+              },
+              {
+                "supply_node_id": "d3315207-ce49-4941-bcee-834b223b01cd",
+                "supply_node_name": "",
+                "supply_data_type": "string",
+                "supply_data_path": "CheckReaderCardEligibility.request(CheckReaderCardEligibilityReq).home_branch",
+                "supply_way": "direct",
+                "process_way": ""
+              },
+              {
+                "supply_node_id": "d3315207-ce49-4941-bcee-834b223b01cd",
+                "supply_node_name": "",
+                "supply_data_type": "string",
+                "supply_data_path": "CheckReaderCardEligibility.request(CheckReaderCardEligibilityReq).document_type",
+                "supply_way": "direct",
+                "process_way": ""
+              },
+              {
+                "supply_node_id": "d3315207-ce49-4941-bcee-834b223b01cd",
+                "supply_node_name": "",
+                "supply_data_type": "uint32",
+                "supply_data_path": "CheckReaderCardEligibility.request(CheckReaderCardEligibilityReq).profile_complete",
+                "supply_way": "direct",
+                "process_way": ""
+              },
+              {
+                "supply_node_id": "d3315207-ce49-4941-bcee-834b223b01cd",
+                "supply_node_name": "",
+                "supply_data_type": "uint32",
+                "supply_data_path": "CheckReaderCardEligibility.request(CheckReaderCardEligibilityReq).max_open_cards",
+                "supply_way": "direct",
+                "process_way": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
     {
       "node_id": "92c3db54-ae7f-437a-816f-ffc18c4b2f49",
       "node_name": "查询读者账户",
@@ -1107,7 +908,7 @@
                 "supply_node_id": "9a306ac2-b196-41e5-8a6f-20c2863fd704",
                 "supply_node_name": "",
                 "supply_data_type": "uint32",
-                "supply_data_path": "CountCardOpenings.response(CardOpeningCount).open_count",
+                "supply_data_path": "CardOpeningRecordRepo.Count.return_value",
                 "supply_way": "direct",
                 "process_way": ""
               },
@@ -1136,7 +937,7 @@
                 "supply_node_id": "0396745c-432b-4d4e-9271-58da578f2835",
                 "supply_node_name": "",
                 "supply_data_type": "uint32",
-                "supply_data_path": "QueryAlternateReview.response(AlternateReview).review_allowed",
+                "supply_data_path": "AlternateDocumentReviewRepo.GetByPrimaryKey.response(AlternateDocumentReview).review_allowed",
                 "supply_way": "direct",
                 "process_way": ""
               }
@@ -1149,7 +950,7 @@
                 "supply_node_id": "92c3db54-ae7f-437a-816f-ffc18c4b2f49",
                 "supply_node_name": "",
                 "supply_data_type": "uint32",
-                "supply_data_path": "QueryReaderAccount.response(ReaderAccountView).account_status",
+                "supply_data_path": "ReaderAccountRepo.GetByPrimaryKey.response(ReaderAccount).account_status",
                 "supply_way": "direct",
                 "process_way": ""
               }
@@ -1182,7 +983,7 @@
         "index_list": []
       },
       "entity_class_code": "class ReaderAccount {\n public:\n  uint64_t reader_id() const;\n  uint32_t account_status() const;\n};\n",
-      "entity_repo_class_code": "class ReaderAccountRepo {\n public:\n  // Query one reader account by reader_id.\n  // Returns an empty result when no record exists.\n  ReaderAccount QueryByReaderId(uint64_t reader_id);\n};\n",
+      "entity_repo_class_code": "class ReaderAccountPoRouteKey {\n public:\n  void set_reader_id(uint64_t reader_id);\n};\n\nclass ReaderAccountRepo {\n public:\n  // Query by reader_id within the supplied route.\n  // Throw hostcomm::errorcode::DAO_GET_EMPTY_RECORD when no record exists.\n  ReaderAccount GetByPrimaryKey(const ReaderAccountPoRouteKey& route, uint64_t reader_id);\n};\n",
       "entity_lib_h_code": null
     },
     "9a306ac2-b196-41e5-8a6f-20c2863fd704": {
@@ -1196,7 +997,7 @@
         "index_list": []
       },
       "entity_class_code": "class CardOpeningRecord {\n public:\n  uint64_t reader_id() const;\n  uint32_t removed_flag() const;\n};\n",
-      "entity_repo_class_code": "class CardOpeningRecordRepo {\n public:\n  // Count records whose removed_flag is 0.\n  uint32_t CountActive(uint64_t reader_id);\n};\n",
+      "entity_repo_class_code": "class CardOpeningRecordPoRouteKey {\n public:\n  void set_reader_id(uint64_t reader_id);\n};\n\nclass CardOpeningRecordRepo {\n public:\n  // Count records for the route whose removed_flag equals the argument.\n  uint32_t Count(const CardOpeningRecordPoRouteKey& route, uint32_t removed_flag);\n};\n",
       "entity_lib_h_code": null
     },
     "0396745c-432b-4d4e-9271-58da578f2835": {
@@ -1210,7 +1011,7 @@
         "index_list": []
       },
       "entity_class_code": "class AlternateDocumentReview {\n public:\n  uint64_t reader_id() const;\n  uint32_t review_allowed() const;\n};\n",
-      "entity_repo_class_code": "class AlternateDocumentReviewRepo {\n public:\n  // Query whether a non-standard document has passed review.\n  // Missing records are treated as review_allowed = 0 by the caller.\n  AlternateDocumentReview QueryByReaderId(uint64_t reader_id);\n};\n",
+      "entity_repo_class_code": "class AlternateDocumentReviewPoRouteKey {\n public:\n  void set_reader_id(uint64_t reader_id);\n};\n\nclass AlternateDocumentReviewRepo {\n public:\n  // Query by reader_id within the supplied route.\n  // Throw hostcomm::errorcode::DAO_GET_EMPTY_RECORD when no record exists.\n  AlternateDocumentReview GetByPrimaryKey(const AlternateDocumentReviewPoRouteKey& route, uint64_t reader_id);\n};\n",
       "entity_lib_h_code": null
     }
   }

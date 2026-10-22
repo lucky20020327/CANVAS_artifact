@@ -151,11 +151,24 @@ def main():
     for key, group in sorted(groups.items()):
         by_handler.append({**dict(zip(KEYS, key)), "n_runs": len(group),
                            "cpr": statistics.mean(r["ut_score"] for r in group),
+                           "cpr_sd": statistics.stdev(r["ut_score"] for r in group) if len(group) > 1 else None,
                            "spr": statistics.mean(r["ut_status"] == "success" for r in group),
                            "tokens_k": statistics.mean(r["token_total"] for r in group) / 1000,
                            "llm_calls": statistics.mean(r["llm_calls"] for r in group),
                            "tool_calls": statistics.mean(r["tool_call_count"] for r in group)})
     write_csv("by_handler.csv", by_handler)
+    write_json("by_handler.json", by_handler)
+    variability = []
+    for system in SYSTEMS:
+        for model in MODELS:
+            cells = [r for r in by_handler if (r['system'], r['model']) == (system, model)]
+            estimable = [r for r in cells if r['cpr_sd'] is not None]
+            variability.append(dict(system=system, model=model, n_estimable=len(estimable),
+                                    n_zero_sd=sum(r['cpr_sd'] == 0 for r in estimable),
+                                    mean_condition_cpr_sd=statistics.mean(r['cpr_sd'] for r in estimable),
+                                    max_condition_cpr_sd=max(r['cpr_sd'] for r in estimable)))
+    write_json("rq1_variability.json", variability)
+    write_csv("rq1_variability.csv", variability)
     summarize_traces(rows)
     write_json("sensitivity_including_infrastructure_failures.json", summarize(normalize(raw)))
     # Diagnostic comparison only; the main tables include all interrupted runs.

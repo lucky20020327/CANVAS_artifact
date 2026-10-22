@@ -40,6 +40,8 @@ The commands refresh the bundled outputs under `analysis/` and `figures/`. RQ1/R
 | RQ3 execution costs and trace categories | `analyze_results.py`, `plot_rq3.py` | [summary.csv](analysis/summary.csv), [trace summary](analysis/rq3_trace_summary.csv), [LaTeX trace table rows](analysis/rq3_trace_table_rows.tex), [efficiency figure](figures/rq3_efficiency_overall.pdf) |
 | RQ4 context-management comparison | `analyze_rq4.py` | [summary.csv](analysis/rq4/summary.csv), [LaTeX table rows](analysis/rq4/table_rows.tex), [aggregate comparisons](analysis/rq4/findings.json) |
 
+RQ1 run-to-run variability is available in [by_handler.csv](analysis/by_handler.csv) / [by_handler.json](analysis/by_handler.json), with harness-level summaries in [rq1_variability.csv](analysis/rq1_variability.csv).
+
 Each analysis also produces JSON summaries. Per-handler RQ1/RQ3 results are in [by_handler.csv](analysis/by_handler.csv); RQ2 per-handler results and sample counts are in [analysis/rq2/](analysis/rq2/).
 
 ### Optional output locations and paper checks
@@ -67,6 +69,21 @@ python analyze_rq4.py --paper-source path/to/experimentResults.tex
 | RQ4 | [RQ4_context_management.xlsx](RQ4_context_management.xlsx); validation also hashes [RQ4_evaluation_records.json](RQ4_evaluation_records.json) | The JSON contains the same evaluation records as the workbook |
 
 The RQ1/RQ3 workbooks expose the same 750 runs, split by harness, with correctness and cost fields respectively. `uml2code` / `SGCA` denotes the CANVAS coding agent. RQ2 records identify the design artifact, model, handler, developer, and run. RQ4 records identify the strategy, model, handler, and run.
+
+## Harness versions
+
+| Harness | Version | Source revision / evidence |
+|---|---|---|
+| CANVAS (SGCA) | Internal implementation | No public release identifier; experiment revision awaiting confirmation |
+| Kilo Code | 7.0.30 | Source checkout `0a50a6c5467a6011a1d1769346e130dca505cfcb` |
+| OpenCode | 1.3.0 | Source checkout `222b91a376a81d077f344367d30712747baeddc4` |
+| OpenHands | 1.5.0 | Source checkout `1f275a7cfe91bf8ca090430b49dcae3c5392fe7d` |
+| Claude Code | 2.1.154 | Version reported in all 150 available run initialization records |
+
+The three source-checkout versions above identify the available evaluation
+checkouts; their correspondence to the experiment-time versions remains to be
+confirmed. Kilo Code and OpenCode evaluation launchers execute these source
+checkouts. Source revisions do not describe uncommitted evaluation adaptations.
 
 ## Analysis conventions
 
@@ -107,6 +124,16 @@ full expected test suite; a raw `ut_total=0` must not remove its denominator.
 the original counts in `raw_ut_*`; the raw workbooks do not rewrite them.
 CANVAS compilation status uses the independent test evaluator, since not
 calling the agent's compile tool does not imply an uncompilable artifact.
+
+### RQ1 run-to-run variability
+
+`cpr_sd` is the sample standard deviation (denominator `n - 1`) of run-level
+CPR within each harness–model–handler configuration, using the same exclusions
+as the main results. It is on the 0–1 scale; multiply by 100 for percentage
+points. Configurations with one analyzed run have an undefined SD (`null` in
+JSON, empty in CSV), not zero. The variability summaries average condition SDs
+over estimable handlers; they are not standard errors of the overall CPR.
+A zero SD means identical observed scores, which can include repeated failures.
 
 ## RQ1/RQ3: shared evaluation records
 
@@ -181,12 +208,17 @@ counts, plot labels, and cumulative cyclomatic complexities. Wilcoxon tests
 pair the 15 handler means: Enhanced UML > NL for CPR, and NL > Enhanced UML
 for tokens. The implementation uses exact sign permutations with midranks for
 ties and drops zero differences; fractions avoid numerical tie/zero artifacts.
-P-values are unadjusted for multiple comparisons.
+Holm correction is applied separately to correctness (CPR) and efficiency
+(tokens), with four comparisons in each family: two models × two NL baselines.
+In the summary CSV/JSON, `cpr_p` and `tokens_p` retain raw p-values;
+`cpr_p_holm` and `tokens_p_holm` contain adjusted p-values. The LaTeX table
+and paper report the adjusted values.
 
 ## RQ4: context management
 
 `RQ4_context_management.xlsx` contains 40 evaluation records: two strategies,
 two models, two application-layer handlers, and five runs per configuration.
+These runs are independent of RQ1; no RQ1 runs are reused in RQ4.
 `RQ4_evaluation_records.json` provides the same records in JSON format.
 
 RQ4 uses a budget of 50 agent LLM calls. Auxiliary summarization calls do not

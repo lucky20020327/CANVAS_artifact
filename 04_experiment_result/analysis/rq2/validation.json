@@ -34,5 +34,7 @@
   ],
   "agent_call_budget": 50,
   "missing_run_policy": "analyze available records; do not impute missing runs",
-  "wilcoxon": "paired handler means; one-sided exact sign permutations; zero differences dropped, tied absolute differences midranked"
+  "wilcoxon": "paired handler means; one-sided exact sign permutations; zero differences dropped, tied absolute differences midranked",
+  "multiple_comparisons": "Holm correction separately for CPR and tokens; each family contains four comparisons (two models times two NL baselines)",
+  "p_value_fields": "*_p: raw; *_p_holm: Holm-adjusted, reported in the paper table"
 }

@@ -77,6 +77,16 @@ def exact_wilcoxon(differences):
             'n_nonzero': len(values)}
 
 
+def holm_adjust(p_values):
+    """Holm step-down adjustment for one family, in original input order."""
+    adjusted = [0.0] * len(p_values)
+    running_max = 0.0
+    for rank, index in enumerate(sorted(range(len(p_values)), key=p_values.__getitem__)):
+        running_max = max(running_max, (len(p_values) - rank) * p_values[index])
+        adjusted[index] = min(1.0, running_max)
+    return adjusted
+
+
 def aggregate(rows):
     groups = defaultdict(list)
     for r in rows:
@@ -102,7 +112,8 @@ def aggregate(rows):
                          macro_cpr=statistics.mean(r['cpr'] for r in cells), tokens_k=float(token_mean / 1000),
                          token_ratio=float(token_mean / baseline_tokens),
                          llm_calls=statistics.mean(r['llm_calls'] for r in cells),
-                         cpr_p=None, tokens_p=None, cpr_n_nonzero=None, tokens_n_nonzero=None)
+                         cpr_p=None, tokens_p=None, cpr_p_holm=None, tokens_p_holm=None,
+                         cpr_n_nonzero=None, tokens_n_nonzero=None)
             if arm != ARMS[0]:
                 for metric, index, direction in [('cpr', 0, -1), ('tokens', 1, 1)]:
                     differences = [direction * (paired[model, arm, h['layer'], h['eval_id']][index] -
@@ -111,6 +122,11 @@ def aggregate(rows):
                     entry[metric + '_p'] = test['p']
                     entry[metric + '_n_nonzero'] = test['n_nonzero']
             summary.append(entry)
+    comparisons = [r for r in summary if r['arm'] != ARMS[0]]
+    for metric in ('cpr', 'tokens'):
+        adjusted = holm_adjust([r[metric + '_p'] for r in comparisons])
+        for entry, p in zip(comparisons, adjusted):
+            entry[metric + '_p_holm'] = p
     return summary, by_handler
 
 
@@ -143,7 +159,7 @@ def table_rows(summary):
     lines = []
     for r in summary:
         arm = r'\enhancedUML{}' if r['arm'] == ARMS[0] else r['arm']
-        p = '--' if r['cpr_p'] is None else f"{r['cpr_p']:.6f} / {r['tokens_p']:.6f}"
+        p = '--' if r['cpr_p_holm'] is None else f"{r['cpr_p_holm']:.6f} / {r['tokens_p_holm']:.6f}"
         lines.append(f"& {arm} & {r['micro_cpr']:.3f} & {r['macro_cpr']:.3f} & {r['tokens_k']:.1f} & "
                      f"{r['token_ratio']:.2f}" + r'$\times$' + f" & {p} " + r'\\')
     return '\n'.join(lines) + '\n'
@@ -180,11 +196,13 @@ def main():
     save_json(out, 'validation.json', {'n_runs': len(rows), 'missing_runs': [r for r in counts if r['missing_runs']],
                                      'agent_call_budget': MAX_LLM_CALLS,
                                      'missing_run_policy': 'analyze available records; do not impute missing runs',
-                                     'wilcoxon': 'paired handler means; one-sided exact sign permutations; zero differences dropped, tied absolute differences midranked'})
+                                     'wilcoxon': 'paired handler means; one-sided exact sign permutations; zero differences dropped, tied absolute differences midranked',
+                                     'multiple_comparisons': 'Holm correction separately for CPR and tokens; each family contains four comparisons (two models times two NL baselines)',
+                                     'p_value_fields': '*_p: raw; *_p_holm: Holm-adjusted, reported in the paper table'})
     (out / 'table_rows.tex').write_text(table_rows(summary), encoding='utf-8')
     print('RQ2: 743 evaluation records; 7 missing records.')
     for r in summary:
-        print(r['model'], r['arm'], f"N={r['n_runs']}, Micro/Macro CPR={r['micro_cpr']:.3f}/{r['macro_cpr']:.3f}, tokens={r['tokens_k']:.1f}K, p={r['cpr_p']}")
+        print(r['model'], r['arm'], f"N={r['n_runs']}, Micro/Macro CPR={r['micro_cpr']:.3f}/{r['macro_cpr']:.3f}, tokens={r['tokens_k']:.1f}K, CPR p(raw/Holm)={r['cpr_p']}/{r['cpr_p_holm']}")
     if args.paper_source:
         check_paper(args.paper_source, summary)
 
