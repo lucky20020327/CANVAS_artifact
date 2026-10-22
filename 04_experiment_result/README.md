@@ -74,7 +74,7 @@ The RQ1/RQ3 workbooks expose the same 750 runs, split by harness, with correctne
 
 | Harness | Version | Source revision / evidence |
 |---|---|---|
-| CANVAS (SGCA) | Internal implementation | No public release identifier; experiment revision awaiting confirmation |
+| CANVAS (SGCA) | Internal implementation | \ |
 | Kilo Code | 7.0.30 | Source checkout `0a50a6c5467a6011a1d1769346e130dca505cfcb` |
 | OpenCode | 1.3.0 | Source checkout `222b91a376a81d077f344367d30712747baeddc4` |
 | OpenHands | 1.5.0 | Source checkout `1f275a7cfe91bf8ca090430b49dcae3c5392fe7d` |
